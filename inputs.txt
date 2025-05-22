@@ -1,0 +1,41 @@
+expected_features = [
+        'total_rating_count', 'hypes', 'game_status',
+        'release_year', 'release_month', 'release_dayofweek', 
+        'release_quarter', 'release_dayofyear', 'is_weekend',
+        
+        'genres_adventure', 'genres_arcade', 'genres_card-and-board-game', 'genres_fighting', 'genres_hack-and-slash-beat-em-up',
+        'genres_indie', 'genres_moba', 'genres_music', 'genres_pinball', 'genres_platform', 'genres_point-and-click',
+        'genres_puzzle', 'genres_quiz-trivia', 'genres_racing', 'genres_real-time-strategy-rts', 'genres_role-playing-rpg',
+        'genres_shooter', 'genres_simulator', 'genres_sport', 'genres_strategy', 'genres_tactical',
+        'genres_turn-based-strategy-tbs', 'genres_visual-novel',
+        
+        'platforms_3ds', 'platforms_64dd', 'platforms_amazon-fire-tv', 'platforms_amiga', 'platforms_android',
+        'platforms_arcade', 'platforms_arduboy', 'platforms_atari7800', 'platforms_blackberry', 'platforms_blu-ray-player',
+        'platforms_browser', 'platforms_c64', 'platforms_daydream', 'platforms_dc', 'platforms_digiblast',
+        'platforms_dos', 'platforms_dvd-player', 'platforms_evercade', 'platforms_fairchild-channel-f', 'platforms_famicom',
+        'platforms_gba', 'platforms_gbc', 'platforms_gear-vr', 'platforms_genesis-slash-megadrive', 'platforms_gizmondo',
+        'platforms_ios', 'platforms_leapster', 'platforms_leapster-explorer-slash-leadpad-explorer', 'platforms_linux',
+        'platforms_mac', 'platforms_meta-quest-2', 'platforms_meta-quest-3', 'platforms_mobile', 'platforms_msx',
+        'platforms_n64', 'platforms_nds', 'platforms_neo-geo-cd', 'platforms_neogeoaes', 'platforms_neogeomvs',
+        'platforms_nes', 'platforms_new-nintendo-3ds', 'platforms_ngage', 'platforms_ngc', 'platforms_nintendo-dsi',
+        'platforms_nuon', 'platforms_oculus-go', 'platforms_oculus-quest', 'platforms_oculus-rift', 'platforms_oculus-vr',
+        'platforms_onlive-game-system', 'platforms_ooparts', 'platforms_ouya', 'platforms_palm-os', 'platforms_plug-and-play',
+        'platforms_ps', 'platforms_ps2', 'platforms_ps3', 'platforms_ps4--1', 'platforms_ps5', 'platforms_psp',
+        'platforms_psvita', 'platforms_psvr', 'platforms_psvr2', 'platforms_sega32', 'platforms_series-x-s',
+        'platforms_sfam', 'platforms_snes', 'platforms_stadia', 'platforms_steam-vr', 'platforms_super-nes-cd-rom-system',
+        'platforms_switch', 'platforms_switch-2', 'platforms_turbografx-16-slash-pc-engine-cd', 'platforms_visionos',
+        'platforms_wii', 'platforms_wiiu', 'platforms_win', 'platforms_windows-mixed-reality', 'platforms_windows-mobile',
+        'platforms_winphone', 'platforms_wonderswan', 'platforms_wonderswan-color', 'platforms_xbox', 'platforms_xbox360',
+        'platforms_xboxone', 'platforms_zeebo', 'platforms_zod',
+        
+        'game_modes_battle-royale', 'game_modes_co-operative', 
+        'game_modes_massively-multiplayer-online-mmo',
+        'game_modes_multiplayer', 'game_modes_single-player', 'game_modes_split-screen',
+        
+        
+        
+        'player_perspectives_auditory', 'player_perspectives_bird-view-slash-isometric',
+        'player_perspectives_first-person', 
+        'player_perspectives_side-view', 'player_perspectives_text',
+        'player_perspectives_third-person', 'player_perspectives_virtual-reality'
+    ]

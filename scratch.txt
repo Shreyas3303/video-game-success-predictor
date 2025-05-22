@@ -1,0 +1,8 @@
+[{'id': 330684, 'category': 14, 'cover': 437074, 'created_at': 1738949769, 
+'game_engines': [439], 'game_modes': [1, 2, 4], 'genres': [10, 33], 
+'involved_companies': [306710], 'name': 'Nightmare Kart: The Old Karts', 
+'parent_game': 295664, 'platforms': [6], 'player_perspectives': [2], 
+'release_dates': [700729], 'screenshots': [1459201, 1459202, 1459205, 1459203, 1459204], 
+'slug': 'nightmare-kart-the-old-karts', 
+'summary': 'An upcoming free expansion to Nightmare Kart with a brand new mini-campaign, racers, karts, tracks, power-ups, and game modes.', 'themes': [1], 'updated_at': 1739978991, 
+'url': 'https://www.igdb.com/games/nightmare-kart-the-old-karts', 'videos': [139717], 'checksum': '7d5404e9-fea7-c763-0667-d9ad7a9ba15a', 'game_type': 14}]
