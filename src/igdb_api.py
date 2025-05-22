@@ -8,6 +8,10 @@ import csv
 # Load environment variables from .env file
 load_dotenv()
 
+# Define paths relative to project root
+DATA_DIR = 'data'
+DEFAULT_CSV_PATH = os.path.join(DATA_DIR, 'igdb_games.csv')
+
 class IGDBAPI:
     def __init__(self):
         self.client_id = os.getenv('IGDB_CLIENT_ID')
@@ -78,7 +82,10 @@ class IGDBAPI:
         
         return all_games
 
-def save_to_csv(games, filename='igdb_games.csv'):
+def save_to_csv(games, filename=DEFAULT_CSV_PATH):
+    # Ensure data directory exists
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    
     # Convert to DataFrame
     df = pd.DataFrame(games)
     

@@ -3,7 +3,12 @@ import numpy as np
 from sklearn.preprocessing import MultiLabelBinarizer, RobustScaler
 import joblib
 import warnings
+import os
 warnings.filterwarnings('ignore')
+
+# Define paths relative to project root
+MODEL_PATH = os.path.join('models', 'best_model.joblib')
+MLB_PATH = os.path.join('models', 'mlb_dict.joblib')
 
 def preprocess_game_data(game_data, mlb_dict=None):
     """
@@ -91,7 +96,7 @@ def preprocess_game_data(game_data, mlb_dict=None):
     
     return df
 
-def predict_game_rating(game_data, model_path='best_model.joblib', mlb_path='mlb_dict.joblib'):
+def predict_game_rating(game_data, model_path=MODEL_PATH, mlb_path=MLB_PATH):
     """
     Predict the rating for a new game.
     
@@ -120,7 +125,7 @@ def predict_game_rating(game_data, model_path='best_model.joblib', mlb_path='mlb
         print(f"Error making prediction: {str(e)}")
         return None
 
-def save_model(model, mlb_dict, model_path='best_model.joblib', mlb_path='mlb_dict.joblib'):
+def save_model(model, mlb_dict, model_path=MODEL_PATH, mlb_path=MLB_PATH):
     """
     Save the trained model and MultiLabelBinarizers to files.
     
@@ -131,6 +136,9 @@ def save_model(model, mlb_dict, model_path='best_model.joblib', mlb_path='mlb_di
     mlb_path (str): Path to save the MultiLabelBinarizer dictionary
     """
     try:
+        # Ensure models directory exists
+        os.makedirs(os.path.dirname(model_path), exist_ok=True)
+        
         joblib.dump(model, model_path)
         joblib.dump(mlb_dict, mlb_path)
         print(f"Model and MultiLabelBinarizers saved successfully")
